@@ -29,47 +29,47 @@
         <div class="modal-container">
             <button class="close-btn" id="closeModal">&times;</button>
             <div class="modal-body">
-                <iframe src="" id="modalIframe" title="Fiche Carrière"></iframe>
+                <iframe src="" id="modalIframe" title="Fiche Carrière PDF"></iframe>
             </div>
         </div>
     </div>
 
     <script>
-        // Base de données des 26 joueurs validés
+        // Base de données des 26 joueurs avec extensions .pdf corrigées
         const joueurs = [
             // Gardiens
-            { id: 1, nom: "Johny Placide", poste: "Gardien / Capitaine", club: "SC Bastia (Ligue 2 🇫🇷)", cat: "GK", fichier: "flyer_johny_placide_tiktok.html" },
-            { id: 16, nom: "Alexandre Pierre", poste: "Gardien", club: "FC Sochaux-Montbéliard (🇫🇷)", cat: "GK", fichier: "flyer_alexandre_pierre_tiktok.html" },
-            { id: 23, nom: "Josué Duverger", poste: "Gardien", club: "FC Cosmos Koblenz (🇩🇪)", cat: "GK", fichier: "flyer_josue_duverger_tiktok.html" },
+            { id: 1, nom: "Johny Placide", poste: "Gardien / Capitaine", club: "SC Bastia (Ligue 2 🇫🇷)", cat: "GK", fichier: "flyer_johny_placide_tiktok.pdf" },
+            { id: 16, nom: "Alexandre Pierre", poste: "Gardien", club: "FC Sochaux-Montbéliard (🇫🇷)", cat: "GK", fichier: "flyer_alexandre_pierre_tiktok.pdf" },
+            { id: 23, nom: "Josué Duverger", poste: "Gardien", club: "FC Cosmos Koblenz (🇩🇪)", cat: "GK", fichier: "flyer_josue_duverger_tiktok.pdf" },
             
             // Défenseurs
-            { id: 4, nom: "Ricardo Adé", poste: "Défenseur Central", club: "LDU Quito (Équateur 🇪🇨)", cat: "DF", fichier: "flyer_ricardo_ade_tiktok.html" },
-            { id: 2, nom: "Carlens Arcus", poste: "Arrière Droit", club: "Angers SCO (Ligue 1 🇫🇷)", cat: "DF", fichier: "flyer_carlens_arcus_tiktok.html" },
-            { id: 5, nom: "Hannes Delcroix", poste: "Défenseur Central", club: "FC Lugano (Super League 🇨🇭)", cat: "DF", fichier: "flyer_hannes_delcroix_tiktok.html" },
-            { id: 12, nom: "Jean-Kévin Duverne", poste: "Défenseur Polyvalent", club: "KAA Gent (Belgique 🇧🇪)", cat: "DF", fichier: "flyer_jean_kevin_duverne_tiktok.html" },
-            { id: 17, nom: "Duke Lacroix", poste: "Défenseur Latéral Gauche", club: "Colorado Springs (USL 🇺🇸)", cat: "DF", fichier: "flyer_duke_lacroix_tiktok.html" },
-            { id: 21, nom: "Wilguens Paugain", poste: "Arrière Droit", club: "SV Zulte Waregem (Belgique 🇧🇪)", cat: "DF", fichier: "flyer_wilguens_paugain_officiel.html" },
-            { id: 14, nom: "Keeto Thermoncy", poste: "Défenseur Central", club: "BSC Young Boys U21 (🇨🇭)", cat: "DF", fichier: "flyer_keeto_thermoncy_verifie.html" },
-            { id: 3, nom: "Martin Expérience", poste: "Latéral / Piston Gauche", club: "AS Nancy-Lorraine (🇫🇷)", cat: "DF", fichier: "flyer_martin_experience_tiktok.html" },
+            { id: 4, nom: "Ricardo Adé", poste: "Défenseur Central", club: "LDU Quito (Équateur 🇪🇨)", cat: "DF", fichier: "flyer_ricardo_ade_tiktok.pdf" },
+            { id: 2, nom: "Carlens Arcus", poste: "Arrière Droit", club: "Angers SCO (Ligue 1 🇫🇷)", cat: "DF", fichier: "flyer_carlens_arcus_tiktok.pdf" },
+            { id: 5, nom: "Hannes Delcroix", poste: "Défenseur Central", club: "FC Lugano (Super League 🇨🇭)", cat: "DF", fichier: "flyer_hannes_delcroix_tiktok.pdf" },
+            { id: 12, nom: "Jean-Kévin Duverne", poste: "Défenseur Polyvalent", club: "KAA Gent (Belgique 🇧🇪)", cat: "DF", fichier: "flyer_jean_kevin_duverne_tiktok.pdf" },
+            { id: 17, nom: "Duke Lacroix", poste: "Défenseur Latéral Gauche", club: "Colorado Springs (USL 🇺🇸)", cat: "DF", fichier: "flyer_duke_lacroix_tiktok.pdf" },
+            { id: 21, nom: "Wilguens Paugain", poste: "Arrière Droit", club: "SV Zulte Waregem (Belgique 🇧🇪)", cat: "DF", fichier: "flyer_wilguens_paugain_officiel.pdf" },
+            { id: 14, nom: "Keeto Thermoncy", poste: "Défenseur Central", club: "BSC Young Boys U21 (🇨🇭)", cat: "DF", fichier: "flyer_keeto_thermoncy_verifie.pdf" },
+            { id: 3, nom: "Martin Expérience", poste: "Latéral / Piston Gauche", club: "AS Nancy-Lorraine (🇫🇷)", cat: "DF", fichier: "flyer_martin_experience_tiktok.pdf" },
             
             // Milieux
-            { id: 10, nom: "Jean-Ricner Bellegarde", poste: "Milieu Offensif / Relayeur", club: "Wolverhampton Wanderers (🏴󠁧󠁢󠁥󠁮󠁧󠁿)", cat: "MD", fichier: "flyer_jean_ricner_bellegarde_tiktok.html" },
-            { id: 6, nom: "Danley Jean-Jacques", poste: "Milieu Récupérateur", club: "Philadelphia Union (MLS 🇺🇸)", cat: "MD", fichier: "flyer_danley_jean_jacques_tiktok-v2.html" },
-            { id: 8, nom: "Carl Fred Sainté", poste: "Milieu Sentinelle", club: "FC Dallas (MLS 🇺🇸)", cat: "MD", fichier: "flyer_carl_fred_sainte_tiktok.html" },
-            { id: 18, nom: "Leverton Pierre", poste: "Milieu Défensif / Relayeur", club: "FC Vizela (Portugal 🇵🇹)", cat: "MD", fichier: "flyer_leverton_pierre_tiktok.html" },
-            { id: 20, nom: "Olivier Woodensky Pierre", poste: "Milieu Défensif", club: "Violette AC (Haïti 🇭🇹)", cat: "MD", fichier: "flyer_woodensky_pierre_real_tiktok.html" },
-            { id: 15, nom: "Dominique Célidor Simon", poste: "Milieu Défensif", club: "Tatran Prešov (Slovaquie 🇸🇰)", cat: "MD", fichier: "flyer_dominique_simon_tiktok.html" },
+            { id: 10, nom: "Jean-Ricner Bellegarde", poste: "Milieu Offensif / Relayeur", club: "Wolverhampton Wanderers (🏴󠁧󠁢󠁥󠁮󠁧󠁿)", cat: "MD", fichier: "flyer_jean_ricner_bellegarde_tiktok.pdf" },
+            { id: 6, nom: "Danley Jean-Jacques", poste: "Milieu Récupérateur", club: "Philadelphia Union (MLS 🇺🇸)", cat: "MD", fichier: "flyer_danley_jean_jacques_tiktok-v2.pdf" },
+            { id: 8, nom: "Carl Fred Sainté", poste: "Milieu Sentinelle", club: "FC Dallas (MLS 🇺🇸)", cat: "MD", fichier: "flyer_carl_fred_sainte_tiktok.pdf" },
+            { id: 18, nom: "Leverton Pierre", poste: "Milieu Défensif / Relayeur", club: "FC Vizela (Portugal 🇵🇹)", cat: "MD", fichier: "flyer_leverton_pierre_tiktok.pdf" },
+            { id: 20, nom: "Olivier Woodensky Pierre", poste: "Milieu Défensif", club: "Violette AC (Haïti 🇭🇹)", cat: "MD", fichier: "flyer_woodensky_pierre_real_tiktok.pdf" },
+            { id: 15, nom: "Dominique Célidor Simon", poste: "Milieu Défensif", club: "Tatran Prešov (Slovaquie 🇸🇰)", cat: "MD", fichier: "flyer_dominique_simon_tiktok.pdf" },
             
             // Attaquants
-            { id: 9, nom: "Frantzdy Pierrot", poste: "Avant-Centre", club: "Çaykur Rizespor (Turquie 🇹🇷)", cat: "FW", fichier: "flyer_frantzdy_pierrot_tiktok.html" },
-            { id: 11, nom: "Duckens Nazon", poste: "Avant-Centre", club: "Kayserispor (Turquie 🇹🇷)", cat: "FW", fichier: "flyer_duckens_nazon_tiktok.html" },
-            { id: 19, nom: "Wilson Isidor", poste: "Attaquante Polyvalent", club: "Sunderland AFC (Championship 🏴󠁧󠁢󠁥󠁮󠁧󠁿)", cat: "FW", fichier: "flyer_wilson_isidor_tiktok.html" },
-            { id: 7, nom: "Don Deedson Louicius", poste: "Ailier Percutant", club: "FC Dallas (MLS 🇺🇸)", cat: "FW", fichier: "flyer_deedson_louicius_dallas.html" },
-            { id: 13, nom: "Derrick Etienne Jr.", poste: "Ailier Gauche", club: "Toronto FC (MLS 🇨🇦)", cat: "FW", fichier: "flyer_derrick_etienne_tiktok.html" },
-            { id: 22, nom: "Yassin Enzo Fortuné", poste: "Milieu Offensif / Attaquant", club: "FC Vizela (Portugal 🇵🇹)", cat: "FW", fichier: "flyer_yassin_fortune_tiktok.html" },
-            { id: 24, nom: "Josué Casimir", poste: "Ailier / Piston Droit", club: "AJ Auxerre (Ligue 1 🇫🇷)", cat: "FW", fichier: "flyer_josue_casimir_tiktok.html" },
-            { id: 25, nom: "Lenny Alvin Pico Joseph", poste: "Avant-Centre / Ailier", club: "Ferencváros TC (Hongrie 🇭🇺)", cat: "FW", fichier: "flyer_lenny_joseph_tiktok.html" },
-            { id: 26, nom: "Rubens Providence", poste: "Ailier Technique", club: "Almere City FC (Eredivisie 🇳🇱)", cat: "FW", fichier: "flyer_rubens_providence_tiktok.html" }
+            { id: 9, nom: "Frantzdy Pierrot", poste: "Avant-Centre", club: "Çaykur Rizespor (Turquie 🇹🇷)", cat: "FW", fichier: "flyer_frantzdy_pierrot_tiktok.pdf" },
+            { id: 11, nom: "Duckens Nazon", poste: "Avant-Centre", club: "Kayserispor (Turquie 🇹🇷)", cat: "FW", fichier: "flyer_duckens_nazon_tiktok.pdf" },
+            { id: 19, nom: "Wilson Isidor", poste: "Attaquant Polyvalent", club: "Sunderland AFC (Championship 🏴󠁧󠁢󠁥󠁮󠁧󠁿)", cat: "FW", fichier: "flyer_wilson_isidor_tiktok.pdf" },
+            { id: 7, nom: "Don Deedson Louicius", poste: "Ailier Percutant", club: "FC Dallas (MLS 🇺🇸)", cat: "FW", fichier: "flyer_deedson_louicius_dallas.pdf" },
+            { id: 13, nom: "Derrick Etienne Jr.", poste: "Ailier Gauche", club: "Toronto FC (MLS 🇨🇦)", cat: "FW", fichier: "flyer_derrick_etienne_tiktok.pdf" },
+            { id: 22, nom: "Yassin Enzo Fortuné", poste: "Milieu Offensif / Attaquant", club: "FC Vizela (Portugal 🇵🇹)", cat: "FW", fichier: "flyer_yassin_fortune_tiktok.pdf" },
+            { id: 24, nom: "Josué Casimir", poste: "Ailier / Piston Droit", club: "AJ Auxerre (Ligue 1 🇫🇷)", cat: "FW", fichier: "flyer_josue_casimir_tiktok.pdf" },
+            { id: 25, nom: "Lenny Alvin Pico Joseph", poste: "Avant-Centre / Ailier", club: "Ferencváros TC (Hongrie 🇭🇺)", cat: "FW", fichier: "flyer_lenny_joseph_tiktok.pdf" },
+            { id: 26, nom: "Rubens Providence", poste: "Ailier Technique", club: "Almere City FC (Eredivisie 🇳🇱)", cat: "FW", fichier: "flyer_rubens_providence_tiktok.pdf" }
         ];
 
         const grid = document.getElementById('rosterGrid');
@@ -77,7 +77,7 @@
         const iframe = document.getElementById('modalIframe');
         const closeBtn = document.getElementById('closeModal');
 
-        // Génération dynamique des éléments HTML
+        // Génération dynamique des cartes HTML
         joueurs.forEach(j => {
             const card = document.createElement('div');
             card.className = `player-card cat-${j.cat}`;
@@ -86,12 +86,12 @@
                 <h3 class="player-name">${j.nom}</h3>
                 <div class="player-position">${j.poste}</div>
                 <div class="player-club">${j.club}</div>
-                <button class="view-btn" onclick="openFlyer('flyers/${j.fichier}')">Voir la Fiche TikTok</button>
+                <button class="view-btn" onclick="openFlyer('flyers/${j.fichier}')">Ouvrir la Fiche PDF</button>
             `;
             grid.appendChild(card);
         });
 
-        // Fonctions d'affichage de la modale
+        // Fonction d'ouverture de la modale pour le PDF
         function openFlyer(url) {
             iframe.src = url;
             modal.classList.add('active');
