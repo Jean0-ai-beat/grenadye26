@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grenadiers Hub - Qatar 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="flag-top">
+            <div class="blue-bar"></div>
+            <div class="red-bar"></div>
+        </div>
+        <h1>GRENADIERS HUB</h1>
+        <p class="subtitle">EFFECTIF OFFICIEL — OBJECTIF MONDIAL 2026</p>
+    </header>
+
+    <main class="hub-container">
+        
+        <h2 class="section-title">GARDIENS</h2>
+        <div class="player-grid">
+            <div class="player-card" onclick="openFlyer('flyer_johny_placide_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">01</div>
+                <div class="player-info">
+                    <span class="player-pos">GARDIEN / CAPITAINE</span>
+                    <h3>Johny Placide</h3>
+                    <p class="player-club">SC Bastia 🇫🇷</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_alexandre_pierre_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">16</div>
+                <div class="player-info">
+                    <span class="player-pos">GARDIEN</span>
+                    <h3>Alexandre Pierre</h3>
+                    <p class="player-club">FC Sochaux-Montbéliard 🇫🇷</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_josue_duverger_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">23</div>
+                <div class="player-info">
+                    <span class="player-pos">GARDIEN</span>
+                    <h3>Josué Duverger</h3>
+                    <p class="player-club">FC Cosmos Koblenz 🇩🇪</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">DÉFENSEURS</h2>
+        <div class="player-grid">
+            <div class="player-card" onclick="openFlyer('flyer_ricardo_ade_tiktok.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">04</div>
+                <div class="player-info">
+                    <span class="player-pos">DÉFENSEUR CENTRAL</span>
+                    <h3>Ricardo Adé</h3>
+                    <p class="player-club">LDU Quito 🇪🇨</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_carlens_arcus_tiktok.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">02</div>
+                <div class="player-info">
+                    <span class="player-pos">ARRIÈRE DROIT</span>
+                    <h3>Carlens Arcus</h3>
+                    <p class="player-club">Angers SCO 🇫🇷</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_hannes_delcroix_tiktok.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">05</div>
+                <div class="player-info">
+                    <span class="player-pos">DÉFENSEUR CENTRAL</span>
+                    <h3>Hannes Delcroix</h3>
+                    <p class="player-club">FC Lugano 🇨🇭</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_jean_kevin_duverne_tiktok.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">12</div>
+                <div class="player-info">
+                    <span class="player-pos">DÉFENSEUR</span>
+                    <h3>Jean-Kévin Duverne</h3>
+                    <p class="player-club">KAA Gent 🇧🇪</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_duke_lacroix_tiktok.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">17</div>
+                <div class="player-info">
+                    <span class="player-pos">LATÉRAL GAUCHE</span>
+                    <h3>Duke Lacroix</h3>
+                    <p class="player-club">Colorado Springs 🇺🇸</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_wilguens_paugain_officiel.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">21</div>
+                <div class="player-info">
+                    <span class="player-pos">ARRIÈRE DROIT</span>
+                    <h3>Wilguens Paugain</h3>
+                    <p class="player-club">SV Zulte Waregem 🇧🇪</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_keeto_thermoncy_verifie.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">14</div>
+                <div class="player-info">
+                    <span class="player-pos">DÉFENSEUR CENTRAL</span>
+                    <h3>Keeto Thermoncy</h3>
+                    <p class="player-club">BSC Young Boys U21 🇨🇭</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_martin_experience_tiktok.html')">
+                <div class="card-accent bg-red"></div>
+                <div class="player-number">03</div>
+                <div class="player-info">
+                    <span class="player-pos">LATÉRAL GAUCHE</span>
+                    <h3>Martin Expérience</h3>
+                    <p class="player-club">AS Nancy-Lorraine 🇫🇷</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">MILIEUX DE TERRAIN</h2>
+        <div class="player-grid">
+            <div class="player-card" onclick="openFlyer('flyer_jean_ricner_bellegarde_tiktok.html')">
+                <div class="card-accent bg-gold"></div>
+                <div class="player-number">10</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU OFFENSIF / RELAYEUR</span>
+                    <h3>Jean-Ricner Bellegarde</h3>
+                    <p class="player-club">Wolverhampton 🏴%g󠁢󠁥󠁮󠁧󠁿</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_danley_jean_jacques_tiktok-v2.html')">
+                <div class="card-accent bg-gold"></div>
+                <div class="player-number">06</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU RÉCUPÉRATEUR</span>
+                    <h3>Danley Jean-Jacques</h3>
+                    <p class="player-club">Philadelphia Union 🇺🇸</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_carl_fred_sainte_tiktok.html')">
+                <div class="card-accent bg-gold"></div>
+                <div class="player-number">08</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU SENTINELLE</span>
+                    <h3>Carl Fred Sainté</h3>
+                    <p class="player-club">FC Dallas 🇺🇸</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_leverton_pierre_tiktok.html')">
+                <div class="card-accent bg-gold"></div>
+                <div class="player-number">18</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU DÉFENSIF</span>
+                    <h3>Leverton Pierre</h3>
+                    <p class="player-club">FC Vizela 🇵🇹</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_woodensky_pierre_real_tiktok.html')">
+                <div class="card-accent bg-gold"></div>
+                <div class="player-number">20</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU DÉFENSIF</span>
+                    <h3>O. Woodensky Pierre</h3>
+                    <p class="player-club">Violette AC 🇭🇹</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_dominique_simon_tiktok.html')">
+                <div class="card-accent bg-gold"></div>
+                <div class="player-number">15</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU DÉFENSIF</span>
+                    <h3>Dominique C. Simon</h3>
+                    <p class="player-club">Tatran Prešov 🇸🇰</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">ATTAQUANTS &amp; AILIERS</h2>
+        <div class="player-grid">
+            <div class="player-card" onclick="openFlyer('flyer_frantzdy_pierrot_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">09</div>
+                <div class="player-info">
+                    <span class="player-pos">AVANT-CENTRE</span>
+                    <h3>Frantzdy Pierrot</h3>
+                    <p class="player-club">Çaykur Rizespor 🇹🇷</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_duckens_nazon_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">11</div>
+                <div class="player-info">
+                    <span class="player-pos">AVANT-CENTRE</span>
+                    <h3>Duckens Nazon</h3>
+                    <p class="player-club">Kayserispor 🇹🇷</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_wilson_isidor_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">19</div>
+                <div class="player-info">
+                    <span class="player-pos">ATTAQUANT POLYVALENT</span>
+                    <h3>Wilson Isidor</h3>
+                    <p class="player-club">Sunderland AFC 🏴%g󠁢󠁥󠁮%g civilisation</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_deedson_louicius_dallas.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">07</div>
+                <div class="player-info">
+                    <span class="player-pos">AILIER PERCUTANT</span>
+                    <h3>Don Deedson Louicius</h3>
+                    <p class="player-club">FC Dallas 🇺🇸</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_derrick_etienne_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">13</div>
+                <div class="player-info">
+                    <span class="player-pos">AILIER GAUCHE</span>
+                    <h3>Derrick Etienne Jr.</h3>
+                    <p class="player-club">Toronto FC 🇨🇦</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_yassin_fortune_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">22</div>
+                <div class="player-info">
+                    <span class="player-pos">MILIEU OFFENSIF / ATTAQUANT</span>
+                    <h3>Yassin Fortuné</h3>
+                    <p class="player-club">FC Vizela 🇵🇹</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_josue_casimir_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">24</div>
+                <div class="player-info">
+                    <span class="player-pos">AILIER / PISTON DROIT</span>
+                    <h3>Josué Casimir</h3>
+                    <p class="player-club">AJ Auxerre 🇫🇷</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_lenny_joseph_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">25</div>
+                <div class="player-info">
+                    <span class="player-pos">AVANT-CENTRE / AILIER</span>
+                    <h3>Lenny Joseph</h3>
+                    <p class="player-club">Ferencváros TC 🇭🇺</p>
+                </div>
+            </div>
+            <div class="player-card" onclick="openFlyer('flyer_rubens_providence_tiktok.html')">
+                <div class="card-accent bg-blue"></div>
+                <div class="player-number">26</div>
+                <div class="player-info">
+                    <span class="player-pos">AILIER TECHNIQUE</span>
+                    <h3>Rubens Providence</h3>
+                    <p class="player-club">Almere City FC 🇳🇱</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="flyerModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <iframe id="flyerFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openFlyer(fileUrl) {
+            document.getElementById('flyerFrame').src = fileUrl;
+            document.getElementById('flyerModal').style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById('flyerModal').style.display = "none";
+            document.getElementById('flyerFrame').src = "";
+        }
+    </script>
+</body>
+</html>
